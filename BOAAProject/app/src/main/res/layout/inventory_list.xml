@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.hong.boaaproject.characterActivity.CharacterFragment">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="3">
+        <ImageButton
+            android:src="@drawable/ex_hat1"
+            android:background="@android:color/transparent"
+            />
+        <ImageButton
+            android:src="@drawable/ex_hat2"
+            android:background="@android:color/transparent"
+            />
+        <ImageButton
+            android:src="@drawable/ex_hat3"
+            android:background="@android:color/transparent"
+            />
+        <ImageButton
+            android:src="@drawable/ex_hat4"
+            android:background="@android:color/transparent"
+            />
+        <ImageButton
+            android:src="@drawable/ex_hat5"
+            android:background="@android:color/transparent"
+            />
+
+    </GridLayout>
+</android.support.constraint.ConstraintLayout>

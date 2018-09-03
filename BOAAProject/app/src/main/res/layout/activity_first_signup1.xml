@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".firstActivity.SignUp1">
+
+    <ImageButton
+        android:id="@+id/imgPrev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00ff0000"
+        android:padding="10dp"
+        android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tvID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="아이디"
+        android:textSize="17sp"
+        app:layout_constraintLeft_toRightOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/guideline3"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="중복체크"
+        android:id="@+id/tvIdEqual"
+        android:textSize="17sp"
+        android:padding="10dp"
+        app:layout_constraintLeft_toRightOf="@id/etID"
+        app:layout_constraintTop_toBottomOf="@id/guideline3"
+        />
+
+    <EditText
+        android:id="@+id/etID"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        app:layout_constraintLeft_toRightOf="@id/tvID"
+        app:layout_constraintTop_toBottomOf="@id/guideline3" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="닉네임"
+        android:textSize="17sp"
+        app:layout_constraintLeft_toRightOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/tvID" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        app:layout_constraintLeft_toRightOf="@id/tvID"
+        app:layout_constraintTop_toBottomOf="@id/etID" />
+
+    <TextView
+        android:id="@+id/tvPw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="비밀번호"
+        android:textSize="17sp"
+        app:layout_constraintLeft_toRightOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/tvName" />
+
+    <EditText
+        android:id="@+id/etPw"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:password="true"
+        app:layout_constraintLeft_toRightOf="@id/tvPw"
+        app:layout_constraintTop_toBottomOf="@id/etName" />
+
+
+    <TextView
+        android:id="@+id/tvPwCf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="비밀번호 확인"
+        android:textSize="17sp"
+        app:layout_constraintLeft_toRightOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/tvPw" />
+
+    <EditText
+        android:id="@+id/etPwCf"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:password="true"
+        app:layout_constraintLeft_toRightOf="@id/tvPwCf"
+        app:layout_constraintTop_toBottomOf="@id/etPw" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvEqualCheck"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintRight_toLeftOf="@id/guideline2"
+        app:layout_constraintTop_toBottomOf="@id/tvPwCf"
+        android:padding="10dp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="비밀번호 힌트"
+        android:id="@+id/tvHint"
+        android:textSize="17sp"
+        app:layout_constraintTop_toBottomOf="@id/tvEqualCheck"
+        app:layout_constraintLeft_toRightOf="@id/guideline"
+        android:padding="10dp"
+        />
+
+    <Spinner
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:id="@+id/hintSpinner"
+        app:layout_constraintLeft_toRightOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/tvHint"
+        android:entries="@array/hint"
+        >
+    </Spinner>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="답변 "
+        android:textSize="17sp"
+        android:id="@+id/tvAns"
+        app:layout_constraintTop_toBottomOf="@id/hintSpinner"
+        app:layout_constraintRight_toLeftOf="@id/etHint"
+        app:layout_constraintLeft_toLeftOf="@id/guideline"
+        android:padding="10dp"
+        />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:id="@+id/etHint"
+        app:layout_constraintTop_toBottomOf="@id/hintSpinner"
+        app:layout_constraintLeft_toRightOf="@id/tvAns"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="다음으로 >"
+        android:background="#1ABC9C"
+        android:textColor="#ffffff"
+        app:layout_constraintRight_toLeftOf="@id/guideline2"
+        app:layout_constraintBottom_toTopOf="@id/guideline4"
+        android:id="@+id/btnNext"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvInfo"
+        android:textColor="@color/colorAccent"
+        android:textSize="17sp"
+        app:layout_constraintRight_toLeftOf="@id/guideline2"
+        app:layout_constraintTop_toBottomOf="@id/tvAns"
+        android:padding="10dp"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="50dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="335dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="70dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="550dp" />
+
+</android.support.constraint.ConstraintLayout>
